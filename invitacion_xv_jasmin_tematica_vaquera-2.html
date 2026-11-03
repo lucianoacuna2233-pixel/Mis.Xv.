@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4b2a1b">
+<title>Mis XV · Jasmín Luján Ferreyra</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+:root{--brown:#4b2a1b;--gold:#c18b35;--cream:#fff7e9;--ink:#321c14;--sage:#65734c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7eddd;color:var(--ink);font-family:Montserrat,Arial,sans-serif}
+button,a{font:inherit}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:58px 20px;position:relative;overflow:hidden;background:repeating-linear-gradient(2deg,transparent 0 42px,#8f62351c 43px 45px),linear-gradient(135deg,#9a6840,#e5c89e 38%,#f8e9cf 72%,#b17c4c)}
+.hero:before,.hero:after{position:absolute;left:0;width:100%;text-align:center;color:#f7d36b;font-size:clamp(22px,4vw,38px);letter-spacing:12px;text-shadow:0 2px 4px #4b2a1b88;pointer-events:none}.hero:before{content:'🌻  🌼  🌻  🌼  🌻';top:16px}.hero:after{content:'🌻  ✿  🌻  ✿  🌻';bottom:12px}
+.hero-card{max-width:760px;width:100%;padding:42px 24px;border:3px double #b77c29;border-radius:220px 220px 26px 26px;background:repeating-linear-gradient(0deg,#fff7e9f2 0 34px,#f1dfc6f2 35px 36px);box-shadow:0 18px 70px #170c0870;position:relative}.hero-card:before{content:'🤠';display:block;font-size:clamp(55px,9vw,88px);line-height:1.1;filter:drop-shadow(0 5px 3px #4b2a1b44);margin-bottom:6px}.hero-card:after{content:'🌻  🌼  🌻';display:block;font-size:26px;letter-spacing:8px;margin-top:18px}
+.kicker{letter-spacing:.28em;text-transform:uppercase;font-size:12px;color:#79522b}.details{position:relative}.details:before,.details:after{content:'🌻';position:absolute;font-size:clamp(38px,6vw,72px);opacity:.78;top:34px}.details:before{left:2vw}.details:after{right:2vw}.location{background:repeating-linear-gradient(0deg,#fff8ed 0 38px,#f0dfc7 39px 40px)}.rsvp{border-top:8px solid #b77c29;border-bottom:8px solid #b77c29}.script{font-family:'Great Vibes',cursive;font-weight:400}.hero h1{font-size:clamp(56px,11vw,112px);line-height:.95;margin:12px 0 0;color:var(--brown)}.hero .fifteen{font:600 clamp(78px,15vw,150px)/1 'Playfair Display',serif;color:#b77c29;text-shadow:2px 3px #f4d99a}.hero .name{font:clamp(40px,8vw,74px)/1.05 'Great Vibes',cursive;margin:10px 0 20px}.hero p{font:italic 18px 'Playfair Display',serif}.gold-line{width:100px;height:2px;background:var(--gold);margin:18px auto}
+.pill{display:inline-block;padding:12px 22px;border:1px solid var(--gold);border-radius:30px;color:var(--brown);text-decoration:none;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;background:#fff8ed}
+section{padding:78px 20px}.wrap{max-width:980px;margin:auto}.section-title{text-align:center;font:clamp(42px,7vw,64px)/1 'Great Vibes',cursive;color:var(--brown);margin:0 0 14px}.intro{text-align:center;max-width:650px;margin:0 auto 34px;line-height:1.8;color:#705544}
+.details{background:#fff8ed}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.detail{background:linear-gradient(145deg,#fff8ed,#ead5b3);border:2px solid #c99b51;padding:24px 14px;text-align:center;border-radius:18px;box-shadow:inset 0 0 0 4px #fff8ed}.detail .emoji{font-size:28px}.detail h3{font:24px 'Playfair Display',serif;margin:10px 0 5px}.detail p{margin:0;line-height:1.6;font-size:14px}
+.countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:32px 0}.timebox{min-width:82px;padding:16px 10px;background:var(--brown);color:#fff7e9;border-radius:14px;text-align:center}.timebox strong{display:block;font:34px 'Playfair Display',serif}.timebox span{font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:680px;margin:32px auto}.price{border:2px solid #c99b51;border-radius:24px 12px 24px 12px;padding:22px;text-align:center;background:linear-gradient(145deg,#fff8ed,#f0dfc4);box-shadow:inset 0 0 0 4px #fff8ed}.price h3{font:22px 'Playfair Display',serif;margin:0 0 8px}.price strong{font:36px 'Playfair Display',serif;color:#6c371f}
+.location{text-align:center;background:#fff8ed}.location .address{font:25px 'Playfair Display',serif;line-height:1.5}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}.action{border:0;border-radius:30px;background:var(--brown);color:white;text-decoration:none;padding:14px 22px;font-weight:700;font-size:12px;letter-spacing:.08em;cursor:pointer}.action.secondary{background:#b58135}
+.rsvp{background:repeating-linear-gradient(3deg,transparent 0 44px,#f0d7a01a 45px 47px),linear-gradient(135deg,#55301d,#2d1b13);color:#fff8ed;text-align:center}.rsvp .section-title{color:#f4d58c}.rsvp p{max-width:600px;margin:0 auto;line-height:1.8}
+footer{text-align:center;padding:30px 15px;background:#2d1b13;color:#f3dfb9;font:30px 'Great Vibes',cursive}
+.music{position:fixed;right:18px;bottom:18px;z-index:10;border:0;border-radius:50px;background:#fff8ed;color:var(--brown);padding:13px 17px;box-shadow:0 5px 20px #0003;font-weight:700;cursor:pointer}
+.edit-toggle{position:fixed;left:16px;bottom:16px;z-index:12;border:0;border-radius:30px;background:#fff8ed;color:var(--brown);padding:12px 16px;box-shadow:0 5px 20px #0003;font-weight:700;cursor:pointer}
+.editor{display:none;position:fixed;z-index:30;inset:0;background:#1c120ed9;overflow:auto;padding:20px}.editor.open{display:block}.panel{max-width:760px;margin:20px auto;background:#fff8ed;border-radius:20px;padding:24px;box-shadow:0 20px 60px #0005}.panel h2{font:40px 'Great Vibes',cursive;margin:0 0 6px}.panel p{font-size:13px;color:#765d4c;line-height:1.5}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.field input,.field textarea{width:100%;padding:11px;border:1px solid #d8c4a4;border-radius:9px;background:white;font:14px Montserrat,Arial}.field textarea{min-height:75px;resize:vertical}.editor-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.hint{font-size:11px!important}
+@media(max-width:650px){.detail-grid{grid-template-columns:1fr}.prices{grid-template-columns:1fr}.hero-card{padding:38px 17px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:62px 17px}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-card">
+  <div class="kicker">Una noche para recordar</div>
+  <div class="script" style="font-size:34px">Mis</div>
+  <div class="fifteen">XV</div>
+  <h1 class="name" id="heroName">Jasmín Luján Ferreyra</h1>
+  <div class="gold-line"></div>
+  <p id="heroDate">18 de diciembre de 2026 · 21:00 hs</p>
+  <p class="script" style="font-size:34px;margin:12px 0">¡Te espero para celebrar juntos!</p>
+  <a class="pill" href="#detalles">Descubrí la invitación</a>
+ </div>
+</header>
+<section class="details" id="detalles"><div class="wrap">
+ <div style="text-align:center;font-size:34px;letter-spacing:10px;margin-bottom:14px">🌻 🤎 🌻</div><h2 class="section-title">Quiero compartirlo con vos</h2>
+ <p class="intro" id="message">Hay momentos que se vuelven inolvidables cuando los compartimos con las personas que queremos. Me encantaría que seas parte de esta noche tan especial.</p>
+ <div class="detail-grid">
+  <div class="detail"><div class="emoji">📅</div><h3>Fecha</h3><p id="dateText">Viernes 18 de diciembre de 2026</p></div>
+  <div class="detail"><div class="emoji">🕘</div><h3>Horario</h3><p id="timeText">21:00 hs</p></div>
+  <div class="detail"><div class="emoji">📍</div><h3>Lugar</h3><p id="placeText">Salón Los Inmigrantes<br>Avenida Bella Vista 245</p></div>
+ </div>
+ <h2 class="section-title" style="margin-top:55px">La cuenta regresiva</h2>
+ <div class="countdown">
+  <div class="timebox"><strong id="days">--</strong><span>Días</span></div><div class="timebox"><strong id="hours">--</strong><span>Horas</span></div><div class="timebox"><strong id="minutes">--</strong><span>Minutos</span></div><div class="timebox"><strong id="seconds">--</strong><span>Segundos</span></div>
+ </div>
+ <div class="prices">
+  <div class="price"><h3>Mayores</h3><strong id="adultPrice">$30.000</strong></div>
+  <div class="price"><h3>Menores hasta 12 años</h3><strong id="childPrice">$15.000</strong></div>
+ </div>
+ <p class="intro" style="margin-bottom:0">¡Prepará tu mejor sonrisa y vení a disfrutar conmigo!</p>
+</div></section>
+<section class="location"><div class="wrap">
+ <div style="font-size:30px;margin-bottom:10px">🌻 🤠 🌻</div><h2 class="section-title">¿Dónde nos encontramos?</h2><p class="address" id="locationAddress">Salón Los Inmigrantes<br>Avenida Bella Vista 245</p>
+ <div class="actions"><a class="action secondary" id="mapLink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Salon+Los+Inmigrantes+Avenida+Bella+Vista+245">CÓMO LLEGAR</a></div>
+</div></section>
+<section class="rsvp"><div class="wrap">
+ <h2 class="section-title">¡No te lo pierdas!</h2><p>Tu presencia hará que esta noche sea todavía más especial. Confirmá tu asistencia para que podamos esperarte.</p>
+ <div class="actions"><a class="action" id="rsvpLink" href="#" target="_blank" rel="noopener">CONFIRMAR ASISTENCIA POR WHATSAPP</a></div>
+ <p class="script" style="font-size:36px;margin-top:35px">Con cariño, Jasmín ♡</p>
+</div></section>
+<footer>Gracias por ser parte de mi historia ♡</footer>
+<audio id="music" loop></audio><button class="music" id="musicBtn">♫ Música</button>
+<button class="edit-toggle" id="editToggle">⚙ Editar página</button>
+<div class="editor" id="editor"><div class="panel">
+ <h2>Personalizá tu invitación</h2><p>Modificá los datos, elegí tus fotos y cargá tu canción. Los cambios se guardan en este navegador. Para compartir la página con otras personas, después tendrás que publicar el archivo actualizado en un servicio de hosting.</p>
+ <div class="formgrid">
+  <div class="field full"><label>Nombre</label><input id="inName" value="Jasmín Luján Ferreyra"></div>
+  <div class="field"><label>Fecha (AAAA-MM-DD)</label><input id="inDate" type="date" value="2026-12-18"></div>
+  <div class="field"><label>Horario</label><input id="inTime" value="21:00 hs"></div>
+  <div class="field"><label>Salón / lugar</label><input id="inPlace" value="Salón Los Inmigrantes"></div>
+  <div class="field"><label>Dirección</label><input id="inAddress" value="Avenida Bella Vista 245"></div>
+  <div class="field"><label>Precio mayores</label><input id="inAdult" value="$30.000"></div>
+  <div class="field"><label>Precio menores hasta 12</label><input id="inChild" value="$15.000"></div>
+  <div class="field full"><label>Mensaje de invitación</label><textarea id="inMessage">Hay momentos que se vuelven inolvidables cuando los compartimos con las personas que queremos. Me encantaría que seas parte de esta noche tan especial.</textarea></div>
+  <div class="field full"><label>Tu número de WhatsApp (con código de país, sin + ni espacios)</label><input id="inPhone" placeholder="Ej.: 5493764XXXXXX"></div>
+  <div class="field full"><label>Texto para confirmar asistencia</label><input id="inRsvp" value="¡Hola Jasmín! Confirmo mi asistencia a tus XV años."></div>
+  <div class="field"><label>Música (MP3 / audio)</label><input id="audioFile" type="file" accept="audio/*"></div>
+  <div class="field full hint">Consejo: usá fotos propias y una canción que tengas derecho a compartir. En algunos celulares la música solo comienza después de tocar el botón.</div>
+ </div>
+ <div class="editor-actions"><button class="action" id="saveBtn">GUARDAR CAMBIOS</button><button class="action secondary" id="closeEditor">CERRAR</button><button class="action" style="background:#65734c" id="resetBtn">RESTABLECER</button></div>
+ <p class="hint" id="saveStatus"></p>
+</div></div>
+<script>
+const $=id=>document.getElementById(id);
+const defaults={name:'Jasmín Luján Ferreyra',date:'2026-12-18',time:'21:00 hs',place:'Salón Los Inmigrantes',address:'Avenida Bella Vista 245',adult:'$30.000',child:'$15.000',message:'Hay momentos que se vuelven inolvidables cuando los compartimos con las personas que queremos. Me encantaría que seas parte de esta noche tan especial.',phone:'',rsvp:'¡Hola Jasmín! Confirmo mi asistencia a tus XV años.'};
+let state={...defaults,audio:''};
+function dateLong(v){if(!v)return '';let d=new Date(v+'T12:00:00');return new Intl.DateTimeFormat('es-AR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(d)}
+function refresh(){
+ $('heroName').textContent=state.name;$('heroDate').textContent=dateLong(state.date)+' · '+state.time;
+ $('dateText').textContent=dateLong(state.date);$('timeText').textContent=state.time;
+ $('placeText').innerHTML=esc(state.place)+'<br>'+esc(state.address);$('locationAddress').innerHTML=esc(state.place)+'<br>'+esc(state.address);
+ $('adultPrice').textContent=state.adult;$('childPrice').textContent=state.child;$('message').textContent=state.message;
+ $('mapLink').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(state.place+' '+state.address);
+ $('rsvpLink').href=state.phone?'https://wa.me/'+state.phone.replace(/\D/g,'')+'?text='+encodeURIComponent(state.rsvp):'#';
+ $('rsvpLink').onclick=e=>{if(!state.phone){e.preventDefault();alert('Abrí “Editar página” y agregá tu número de WhatsApp para activar las confirmaciones.')}};
+ updateCountdown();
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function updateCountdown(){
+ let target=new Date((state.date||'2026-12-18')+'T21:00:00').getTime(),diff=target-Date.now();
+ if(diff<=0){['days','hours','minutes','seconds'].forEach(x=>$(x).textContent='0');return}
+ $('days').textContent=Math.floor(diff/86400000);$('hours').textContent=Math.floor(diff%86400000/3600000);$('minutes').textContent=Math.floor(diff%3600000/60000);$('seconds').textContent=Math.floor(diff%60000/1000);
+}
+setInterval(updateCountdown,1000);
+function loadForm(){Object.keys(defaults).forEach(k=>{let map={name:'inName',date:'inDate',time:'inTime',place:'inPlace',address:'inAddress',adult:'inAdult',child:'inChild',message:'inMessage',phone:'inPhone',rsvp:'inRsvp'};$(map[k]).value=state[k]??defaults[k]})}
+$('editToggle').onclick=()=>{$('editor').classList.add('open');loadForm()};
+$('closeEditor').onclick=()=>$('editor').classList.remove('open');
+$('saveBtn').onclick=()=>{
+ let map={name:'inName',date:'inDate',time:'inTime',place:'inPlace',address:'inAddress',adult:'inAdult',child:'inChild',message:'inMessage',phone:'inPhone',rsvp:'inRsvp'};
+ Object.keys(map).forEach(k=>state[k]=$(map[k]).value);
+ try{localStorage.setItem('misXVState',JSON.stringify(state));$('saveStatus').textContent='¡Cambios guardados en este navegador!';}catch(e){$('saveStatus').textContent='No se pudo guardar todo (quizás las fotos sean muy pesadas). Probá con imágenes más pequeñas.'}
+ refresh();
+};
+$('audioFile').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{state.audio=r.result;localStorage.setItem('misXVAudio',state.audio);$('music').src=state.audio;$('saveStatus').textContent='Música cargada. Tocá el botón Música para escucharla.'};r.readAsDataURL(f)};
+$('musicBtn').onclick=async()=>{if(!$('music').src){alert('Primero cargá una canción desde “Editar página”.');return}if($('music').paused){try{await $('music').play();$('musicBtn').textContent='Ⅱ Pausar música'}catch(e){alert('No se pudo reproducir el audio. Probá con otro archivo.')}}else{$('music').pause();$('musicBtn').textContent='♫ Música'}};
+$('resetBtn').onclick=()=>{if(!confirm('¿Restablecer los datos de la invitación?'))return;state={...defaults,audio:''};localStorage.removeItem('misXVState');localStorage.removeItem('misXVAudio');location.reload()};
+try{let saved=localStorage.getItem('misXVState');if(saved)state={...state,...JSON.parse(saved)};let au=localStorage.getItem('misXVAudio');if(au){state.audio=au;$('music').src=au}}catch(e){}
+refresh();
+</script>
+</body></html>
